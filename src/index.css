@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    label {
+        @apply font-bold flex mb-1
+    }
+    
+    input {
+        @apply block w-[400] py-1.5 px-3 leading-normal bg-none border border-solid border-gray-400 rounded-md
+    }
+}
+
+:root:has(.no-doc-scroll) {
+    overflow:hidden;
+}
